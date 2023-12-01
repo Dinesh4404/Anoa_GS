@@ -1565,6 +1565,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15.854275, y: 6.7361264}
   m_EdgeRadius: 0
+--- !u!114 &1182714306 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5870312608574853157, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+  m_PrefabInstance: {fileID: 1194914489}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1194914489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1584,6 +1595,34 @@ PrefabInstance:
     - target: {fileID: 2247673272463019939, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
       propertyPath: m_Value
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247673272463019939, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247673272463019939, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247673272463019939, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1593553258}
+    - target: {fileID: 2247673272463019939, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247673272463019939, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: updateHealth
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247673272463019939, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Healthbar, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247673272463019939, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4037196474496027690, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
       propertyPath: m_Pivot.x
@@ -1695,7 +1734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7783404103594345550, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -59
+      value: -58.999996
       objectReference: {fileID: 0}
     - target: {fileID: 8474328094170672930, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
       propertyPath: m_Type
@@ -1720,7 +1759,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7311548821584476097, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1593553258}
   m_SourcePrefab: {fileID: 100100000, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
 --- !u!224 &1194914490 stripped
 RectTransform:
@@ -2505,6 +2547,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1593553256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7311548821584476097, guid: 65704477f197a654ca2bd1cd3069e81a, type: 3}
+  m_PrefabInstance: {fileID: 1194914489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1593553258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593553256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db0e20a4ecaa1843a4d3bfc90bfeaf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 100
+  healthText: {fileID: 1182714306}
 --- !u!1 &1640514369
 GameObject:
   m_ObjectHideFlags: 0
