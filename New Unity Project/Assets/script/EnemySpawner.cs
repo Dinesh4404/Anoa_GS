@@ -26,9 +26,13 @@ public class EnemySpawner : MonoBehaviour
     public List<Wave> waves;
     public int currentWaveCount;
 
+    Transform player;
+
     void Start()
     {
+        player = FindObjectOfType<PlayerStats>().transform;
         CalculateWaveQuota();
+        SpawnEnemies();
     }
 
     // Update is called once per frame
@@ -45,5 +49,23 @@ public class EnemySpawner : MonoBehaviour
         }
         waves[currentWaveCount].waveQuota = currentWaveQuota;
         Debug.LogWarning(currentWaveQuota);
+    }
+
+    void SpawnEnemies()
+    {
+        if(waves[currentWaveCount].spawnCount < waves[currentWaveCount].waveQuota)
+        {
+            foreach (var enemyGroup in waves[currentWaveCount].enemyGroups)
+            {
+                if(enemyGroup.spawnCount < enemyGroup.enemyCount)
+                {
+                    Vector2 spawnPosition = new Vector2(player.transform.position.x + Random.Range(-10f, 10f), player.transform.position.y + Random.Range(-10f, 10f));
+                    Instantiate(enemyGroup.enemyPrefab, spawnPosition, Quaternion.identity);
+
+                    enemyGroup.spawnCount++;
+                    waves[currentWaveCount].spawnCount++;
+                }
+            }
+        }
     }
 }
