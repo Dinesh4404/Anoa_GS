@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Genderuwo
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxHealth: 30
-  damage: 10
+  maxHealth: 40
+  Damage: 20

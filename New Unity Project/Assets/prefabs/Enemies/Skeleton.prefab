@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2722221396417806898}
   - component: {fileID: 3244874392167898975}
   - component: {fileID: 6619665335951880083}
+  - component: {fileID: -1619546015026729849}
+  - component: {fileID: -5786615664499285556}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -152,3 +154,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.3650985, y: 11.68755}
   m_EdgeRadius: 0
+--- !u!114 &-1619546015026729849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277388142514164970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947b3ea6a2795ff4a84dfde169058cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 16fdd891adf90424ca73f61f8e6a49ce, type: 2}
+--- !u!114 &-5786615664499285556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277388142514164970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7aeb33a0b9452498910e6075fa7310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 16fdd891adf90424ca73f61f8e6a49ce, type: 2}

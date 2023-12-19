@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3546764930552034887}
   - component: {fileID: 2526590391388702438}
   - component: {fileID: 2505935666881172790}
+  - component: {fileID: 5002040692459465774}
   m_Layer: 0
   m_Name: Genderuwo
   m_TagString: Untagged
@@ -144,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947b3ea6a2795ff4a84dfde169058cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  enemyData: {fileID: 11400000, guid: 5881fab6efd5c474ab2899267373e7af, type: 2}
 --- !u!95 &2505935666881172790
 Animator:
   serializedVersion: 5
@@ -166,3 +167,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5002040692459465774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7894654330721173099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7aeb33a0b9452498910e6075fa7310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 5881fab6efd5c474ab2899267373e7af, type: 2}
